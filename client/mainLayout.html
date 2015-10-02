@@ -1,0 +1,70 @@
+<template name = "mainLayout">
+  <head>
+    <title>Personal Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  </head>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="">Navigate!</a>
+            </li>
+            <li>
+                <a href="#top">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#services">Skills</a>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#contactInfo">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class = "container">
+      {{> yield}}
+    </div>
+
+     <!-- Footer -->
+    <footer id = "contactInfo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Travis Smith</strong>
+                    </h4>
+                    <p>2480 Birch Ave.<br>Seattle, WA 99109</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (509) 638-4158</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:smithtm90@gmail.com">smithtm90@gmail.com</a>
+                        </li>
+                        <li><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/pub/travis-smith/104/699/889">My LinkedIn Profile</a></li>
+                    </ul>
+                    <br>
+
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Travis Smith 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</template>
